@@ -1,13 +1,16 @@
 @import url(font-awesome.min.css);
 
 /*
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Project 01-01-1-ILund528
+The History of Computers style sheet
+Author: Isaac Lund
+Date: 09.6.2017
+
+Filename: main.css
 */
 
 
-/* Reset */
+/* This tells all HTML, body, div, span, h1, h2, h3, p, a, address, img, ul, li, footer, header, nav, and section tags to have a area box of 0, space around 0, border space 0, font size of 100% font to inherit and verically align on the baseline. */
 
 html, body, div, span, h1, h2, h3, p, a, address, img, ul, li, footer, header, nav, section {
   margin: 0;
@@ -18,20 +21,15 @@ html, body, div, span, h1, h2, h3, p, a, address, img, ul, li, footer, header, n
   vertical-align: baseline;
 }
 
+
+/* This tells all footer, nav, and section tags to be displayed as blocks. */
+
 footer, nav, section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
 
-ul {
-  list-style: none;
-}
-
-
-/* Box Model */
+/* This tells all tags before and after to have a border box. */
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -39,12 +37,15 @@ ul {
   box-sizing: border-box;
 }
 
+
+/* This tells all body tags to have a bakcground of purple. */
+
 body {
   background: #312450;
 }
 
 
-/* Type */
+/* This tells all body tags to have  a text color of ghostly white with a font family of arial helvetica, and sans-serif, font size of 165pt, font weight of normal, and a line height of 1.75. */
 
 body {
   color: rgba(255, 255, 255, 0.55);
@@ -54,24 +55,36 @@ body {
   line-height: 1.75;
 }
 
+
+/* This tells all a tags to have a transition that allows it to when hover over by curser to get slightly bigger and turn white in a span of 1 second while having no text decorations and inherit the color below. */
+
 a {
-  -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-  -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-  -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  -moz-transition: color 1s ease, border-bottom-color 1s ease;
+  -webkit-transition: color 1s ease, border-bottom-color 1s ease;
+  -ms-transition: color 1s ease, border-bottom-color 1s ease;
+  transition: color 1s ease, border-bottom-color 1s ease;
   border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
   color: inherit;
   text-decoration: none;
 }
+
+
+/* This tells all a tags when hovered over to remove the border bottom and get a color of white.  */
 
 a:hover {
   border-bottom-color: transparent;
   color: #ffffff;
 }
 
+
+/* This tells all p tags to have a area box of top left and right of 0 and bottom 2em. */
+
 p {
   margin: 0 0 2em 0;
 }
+
+
+/* This tells all h1, h2 and h3 tags to have a color of white, bold font, line height of 1.5, and an area box of top left and right of 0 and bottom .5em. */
 
 h1, h2, h3 {
   color: #ffffff;
@@ -80,14 +93,23 @@ h1, h2, h3 {
   margin: 0 0 0.5em 0;
 }
 
+
+/* This tells all a tags in all h1, h2, h3 tags to inherit the color above and have no text decoration. */
+
 h1 a, h2 a, h3 a {
   color: inherit;
   text-decoration: none;
 }
 
+
+/* This tells all h1 tags to have a font size of 2.75em. */
+
 h1 {
   font-size: 2.75em;
 }
+
+
+/* This tells all h1 tags to have an area box of top left and right of 0 and bottom 1.3em, and a relative position with a bottom space of .35em. */
 
 h1 {
   margin: 0 0 1.3em 0;
@@ -100,10 +122,6 @@ h1:after {
   background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
   background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
   background-image: linear-gradient(to right, #5e42a6, #b74e91);
-  -moz-transition: max-width 0.2s ease;
-  -webkit-transition: max-width 0.2s ease;
-  -ms-transition: max-width 0.2s ease;
-  transition: max-width 0.2s ease;
   border-radius: 0.2em;
   bottom: 0;
   content: '';
