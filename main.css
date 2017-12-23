@@ -117,6 +117,9 @@ h1 {
   padding-bottom: 0.35em;
 }
 
+
+/* This tells all h1 tags to have a line under it as a gradient from faded to a dark pink with purple with a position of absolute a width of 100% and space of 0 on the right. */
+
 h1:after {
   background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
   background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
@@ -131,19 +134,31 @@ h1:after {
   width: 100%;
 }
 
+
+/* This tells all h2 tags to have a font size of 1.75 em. */
+
 h2 {
   font-size: 1.75em;
 }
 
+
+/* This tells all h3 tags to have a font size of 1.1 em. */
+
 h3 {
   font-size: 1.1em;
 }
+
+
+/* This tells all element tags that have the class of icon to have no text decoration with no botttom border and relative position. */
 
 .icon {
   text-decoration: none;
   border-bottom: none;
   position: relative;
 }
+
+
+/* This tells all element tags with the class of icon to have a font family of FontAwesome font style of normal and a weight of normal with no text transformation. */
 
 .icon:before {
   -moz-osx-font-smoothing: grayscale;
@@ -155,7 +170,7 @@ h3 {
 }
 
 
-/* Image */
+/* This tells all element tags with the class of image to have a border radius of .25em border space 0 displayed as a inline-block and have a relative position. */
 
 .image {
   border-radius: 0.25em;
@@ -164,13 +179,16 @@ h3 {
   position: relative;
 }
 
+
+/* This tells all img tags in all element tags with a class of image to have a border radius of .25em and be displayed as a block. */
+
 .image img {
   border-radius: 0.25em;
   display: block;
 }
 
 
-/* List */
+/* This tells all ul tags to have a list-style of disc margin top left and right 0 and bottom 2em with a space of 1em on the left. */
 
 ul {
   list-style: disc;
@@ -178,9 +196,15 @@ ul {
   padding-left: 1em;
 }
 
+
+/* This tells all li tags in all ul tags to have a space of .5em on the left. */
+
 ul li {
   padding-left: 0.5em;
 }
+
+
+/* This tells all ul tags with the class of icons to have a default cursor, no list-style and a 0 spcae on the left. */
 
 ul.icons {
   cursor: default;
@@ -188,19 +212,31 @@ ul.icons {
   padding-left: 0;
 }
 
+
+/* This tells all li tags in all ul tags with the class of icons to be displayed as a inline-block with a top, right, and bottom spaces of 0 and a left spcae of .75em. */
+
 ul.icons li {
   display: inline-block;
   padding: 0 0.75em 0 0;
 }
 
+
+/* This tells all li that are the last of their type in all ul with a class of icons to have a space of right. */
+
 ul.icons li:last-child {
   padding-right: 0;
 }
+
+
+/* This tells all a tags directly nested within li in all ul with a class of icons to have a border of 0 and no text decoration. */
 
 ul.icons li>a {
   border: 0;
   text-decoration: none;
 }
+
+
+/* This tells all a tags directly nested within li tag in all ul tags with a class of icons to have a font family of FontAwesome style of normal weight of noraml and no text transformation before. */
 
 ul.icons li>a:before {
   -moz-osx-font-smoothing: grayscale;
@@ -211,22 +247,31 @@ ul.icons li>a:before {
   text-transform: none !important;
 }
 
+
+/* This tells all ul tags with a class of contact to have no lsit styles and o space around. */
+
 ul.contact {
   list-style: none;
   padding: 0;
 }
+
+
+/* This tell all li tags that are directly nested with in all ul tags with a class of contact to have 0 space around and a margin top of 1.5em and margin of left right and bottom of 0. */
 
 ul.contact>li {
   padding: 0;
   margin: 1.5em 0 0 0;
 }
 
+
+/* This tells all li tags taht are the last of their types directly nested within all ul tags with a class of contact to have a margin top of 0. */
+
 ul.contact>li:first-child {
   margin-top: 0;
 }
 
 
-/* Split */
+/* This tells all element tags with a class of split to be displayed as flex boxes. */
 
 .split {
   display: -moz-flex;
@@ -235,30 +280,36 @@ ul.contact>li:first-child {
   display: flex;
 }
 
+
+/* This tells all elements tags that have a class of split to have every thing directly nested in them to have a width of 50% of page minus 2.5em. */
+
 .split>* {
   width: calc(50% - 2.5em);
 }
 
 
-/*.split > :nth-child(2n - 1) {
-			padding-right: 2.5em;
-			border-right: solid 1px rgba(255, 255, 255, 0.15);
-		}*/
+/* This tells all elements tags with a class of split to have every even element tag to have a space of 2.5 em left. */
 
 .split> :nth-child(2n) {
   padding-left: 2.5em;
 }
 
+
+/* This tells all elements tags with the class of split and/or style1 to have every odd nested elements to have a width of 2/3 of it's contianer minus 2.5em. */
+
 .split.style1> :nth-child(2n - 1) {
   width: calc(66.66666% - 2.5em);
 }
+
+
+/* This tells all elements tags with the class of split and/or style1 to have every even nested elements to have a width of 1/3 of it's contianer minus 2.5em. */
 
 .split.style1> :nth-child(2n) {
   width: calc(33.33333% - 2.5em);
 }
 
 
-/* Spotlights */
+/* This tells all section tags that are directly nested in the any element tag with a class of spotlights to have a display of flex and flex direction of row with a min height of 22.5em. */
 
 .spotlights>section {
   display: -moz-flex;
@@ -272,6 +323,9 @@ ul.contact>li:first-child {
   min-height: 22.5em;
 }
 
+
+/* This tells all element tags that are directly nested in any section tag directly nested in any element tag with a class of spotlights to have a background to be in the center and cover all of it's container with a 0 border radius displayed as a block postioned relative and width of 225em. */
+
 .spotlights>section>.image {
   background-position: center center;
   background-size: cover;
@@ -281,10 +335,16 @@ ul.contact>li:first-child {
   width: 25em;
 }
 
+
+/* This tells all imgs in any element tag with a class of image that is directly nested in any section tag directly nested in any element tag with a class of spotlights to have 0 border radius displayed as a block. */
+
 .spotlights>section>.image img {
   border-radius: 0;
   display: block;
 }
+
+
+/* This tells all element tags with a class of image directly nested in any section tag directly nested in any element tag with the class of spotlights before to have a transition of 1 second to have a opacity of 0 on the left as a block with a absolute position top of 0 and a width of 100% of it's container. */
 
 .spotlights>section>.image:before {
   -moz-transition: opacity 1s ease;
@@ -302,6 +362,9 @@ ul.contact>li:first-child {
   width: 100%;
 }
 
+
+/* This tells all element tags with a class of content directly nested in any section tag directly nested in any element with a class of spotlights to have a space top of 4em bottom of 2em and left and right 5em displayed as a flex with a flex dirction of column justiyied in the center with a width of 50em with a flex of 1. */
+
 .spotlights>section>.content {
   padding: 4em 5em 2em 5em;
   display: -moz-flex;
@@ -318,7 +381,11 @@ ul.contact>li:first-child {
   justify-content: center;
   width: 50em;
   -ms-flex: 1;
+  flex: 1;
 }
+
+
+/* This tells all elements with a class of inner directly nested in any element with a class of content directly nested in any section tag directly nested in any element tag with a class of spotlights to have a transformation of position x of 0 and a position of 0 with a transition of 1 second from 1 opacity to the transformation.  */
 
 .spotlights>section>.content>.inner {
   -moz-transform: translateX(0) translateY(0);
@@ -332,19 +399,31 @@ ul.contact>li:first-child {
   opacity: 1;
 }
 
+
+/* This tells all second section tags in any element with the class of spotlights to have a no color with a transparent look. */
+
 .spotlights>section:nth-child(2) {
   background-color: rgba(0, 0, 0, 0.05);
 }
+
+
+/* This tells all third section tags in any element with the class of spotlights to have a no color with a transparent look. */
 
 .spotlights>section:nth-child(3) {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.spotlights>section.inactive>.image:before, body.is-loading .spotlights>section>.image:before {
+
+/* This tells all element tags with a class of image directly nested in any section not hovered over directly nested in any element tag with a class of spotlights to have a opacity of 1. */
+
+.spotlights>section.inactive>.image:before {
   opacity: 1;
 }
 
-.spotlights>section.inactive>.content>.inner, body.is-loading .spotlights>section>.content>.inner {
+
+/* This tells any element with a class of inner directly nested in any element with a class of content directly nested in any section element not overed over directly nested in any element tag with a class of spotlights to have a transfromation of 1em x and an opacity of 0. */
+
+.spotlights>section.inactive>.content>.inner {
   -moz-transform: translateX(-1em);
   -webkit-transform: translateX(-1em);
   -ms-transform: translateX(-1em);
@@ -353,11 +432,14 @@ ul.contact>li:first-child {
 }
 
 
-/* Wrapper */
+/* This tells any element tags with a class of wrapper to have a position of relative. */
 
 .wrapper {
   position: relative;
 }
+
+
+/* This tells any element tag with a classs of inner directly nested in any element tag with a classs of wrapper to ahve a space left top and right of 5em and a space of bottom of 3em and a max width of 100% with a width of 75em. */
 
 .wrapper>.inner {
   padding: 5em 5em 3em 5em;
@@ -365,33 +447,29 @@ ul.contact>li:first-child {
   width: 75em;
 }
 
-.wrapper.alt {
-  background-color: #261c3e;
-}
+
+/* This tells any element tags with a class of wrapper and/or style1 to have a background color of a light purple. */
 
 .wrapper.style1 {
   background-color: #5e42a6;
 }
 
+
+/* This tells any element tags that have a class of wrapper and/or style1-alt to have a background of light purple. */
+
 .wrapper.style1-alt {
   background-color: #493382;
 }
+
+
+/* This tells any element tags with a class of wrapper and/or style2 to have a blue background. */
 
 .wrapper.style2 {
   background-color: #5052b5;
 }
 
-.wrapper.style2-alt {
-  background-color: #3e4094;
-}
 
-.wrapper.style3 {
-  background-color: #b74e91;
-}
-
-.wrapper.style3-alt {
-  background-color: #953d75;
-}
+/* This tells any element tag with a class of wrapper and/or fullscreen to be displayed as a flex with a flex direction of column and justify content center with a min height of 100vh. */
 
 .wrapper.fullscreen {
   display: -moz-flex;
@@ -409,6 +487,9 @@ ul.contact>li:first-child {
   min-height: 100vh;
 }
 
+
+/* This tells any element tags with a class of inner directly nested in any element tags that have a class of wrapper and/or fade-up to have a transformation of 0 y and a transition of 1 opacity in 1 second to the transformation in 1 second. */
+
 .wrapper.fade-up>.inner {
   -moz-transform: translateY(0);
   -webkit-transform: translateY(0);
@@ -421,6 +502,9 @@ ul.contact>li:first-child {
   opacity: 1.0;
 }
 
+
+/* This tells any element tag with a class of inner directly nested in any unhovered element with a class of wrapper and/or fade-up to haev a opacity of 0 and transform 1em y. */
+
 .wrapper.fade-up.inactive>.inner {
   opacity: 0;
   -moz-transform: translateY(1em);
@@ -428,6 +512,9 @@ ul.contact>li:first-child {
   -ms-transform: translateY(1em);
   transform: translateY(1em);
 }
+
+
+/* This tells any element with a class of inner directly nested in any element that has a class of wrapper and/or fade-down to have a transition of 1 opacity in 1 seocond and cause a transformation of 0 Y in 1 second. */
 
 .wrapper.fade-down>.inner {
   -moz-transform: translateY(0);
@@ -441,6 +528,9 @@ ul.contact>li:first-child {
   opacity: 1.0;
 }
 
+
+/* This tells any element tag with a class of inner directly nested in any unhovered element with a class of wrapper and/or fade-down to haev a opacity of 0 and transform -1em y.  */
+
 .wrapper.fade-down.inactive>.inner {
   opacity: 0;
   -moz-transform: translateY(-1em);
@@ -448,6 +538,9 @@ ul.contact>li:first-child {
   -ms-transform: translateY(-1em);
   transform: translateY(-1em);
 }
+
+
+/* This tells any element tag with a class of inner directly nested in any element with a class of wrapper and/or fade to have a opacity trasition of 1 second to 1. */
 
 .wrapper.fade>.inner {
   -moz-transition: opacity 1s ease;
@@ -457,40 +550,44 @@ ul.contact>li:first-child {
   opacity: 1.0;
 }
 
+
+/* This tells any element tag with a class of inner directly nested in any unhovered element with a class of wrapper and/or fade to haev a opacity of 0. */
+
 .wrapper.fade.inactive>.inner {
   opacity: 0;
 }
 
 
-/* Wrapper (main) */
+/* This tells any elements with a id of sidebar or wrapper to have a margin left of 18em. */
 
 #sidebar+#wrapper {
   margin-left: 18em;
 }
+
+
+/* This tells any elements with a class of inner directly nested in any element witha a class of wrapper directly nested in any element tag with an id of wrapper to have a top and bottom margin of 0 and left and right margin of auto.  */
 
 #wrapper>.wrapper>.inner {
   margin: 0 auto;
 }
 
 
-/* Footer */
+/* This tells any element with a id of siderbar, wrapper, or footer to have a left margin of 18em. */
 
 #sidebar+#wrapper+#footer {
   margin-left: 18em;
 }
 
-#footer>.inner a {
-  border-bottom-color: rgba(255, 255, 255, 0.15);
-}
 
-#footer>.inner a:hover {
-  border-bottom-color: transparent;
-}
+/* This tells any a element tags with a class of menu in any element with the class of inner directly nested in any element with the id of footer to have a font size of 0.8em and a color of grey transparent. */
 
 #footer>.inner .menu {
   font-size: 0.8em;
   color: rgba(255, 255, 255, 0.15);
 }
+
+
+/* This tell any element with the class of inner directly nested in any element with a id of wrapper or footer to have a top and bottom margin of 0 and left and right margin of auto. */
 
 #wrapper+#footer>.inner {
   margin: 0 auto;
@@ -759,18 +856,6 @@ ul.contact>li:first-child {
 
 #sidebar nav a.active:after {
   max-width: 100%;
-}
-
-body.is-loading #sidebar>.inner {
-  opacity: 0;
-}
-
-body.is-loading #sidebar nav ul li {
-  -moz-transform: translateY(2em);
-  -webkit-transform: translateY(2em);
-  -ms-transform: translateY(2em);
-  transform: translateY(2em);
-  opacity: 0;
 }
 
 
